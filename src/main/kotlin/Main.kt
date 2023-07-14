@@ -1,7 +1,17 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+ var a: Int = 20
+ println("Integer value :$a")
+ var b: Float = 9.5F
+ println("Float value :$b")
+ var c: Char = 'm'
+ println("Character value :$c")
+ var d: String = "mar"
+ println("String value :$d")
+ var e: Long = 25122002
+ println("Long value :$e")
+ var f: Short = 89
+ println("Short value :$f")
+ var g: Byte = 126
+ println("Byte value :$g")
 }
+
