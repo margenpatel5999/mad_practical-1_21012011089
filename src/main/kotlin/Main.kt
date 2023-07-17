@@ -13,5 +13,7 @@ fun main() {
  println("Short value :$f")
  var g: Byte = 126
  println("Byte value :$g")
+ var h = "false"
+ println("Boolean value :$h")
 }
 
