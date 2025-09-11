@@ -1118,6 +1118,16 @@ body.menu-open {
     gap: 40px;
     padding: 40px 30px;
   }
+  
+  /* Tablet - keep all 5 cards but adjust positioning */
+  .cta-visual {
+    height: 350px;
+  }
+  
+  .floating-card {
+    min-width: 100px;
+    max-width: 120px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1141,47 +1151,47 @@ body.menu-open {
   }
   
   .cta-visual {
-    height: 300px;
+    height: 280px;
   }
   
   .floating-card {
-    min-width: 90px;
-    max-width: 110px;
-    padding: 14px;
+    min-width: 95px;
+    max-width: 115px;
+    padding: 16px;
   }
   
-  /* Mobile positioning - more compact but still separate */
+  /* Hide card-5 (Scalability) on mobile to show only 4 cards */
+  .floating-card.card-5 {
+    display: none;
+  }
+  
+  /* Mobile positioning for 4 cards - better spaced without overlap */
   .floating-card.card-1 {
-    top: 8%;
-    left: 8%;
+    top: 15%;
+    left: 12%;
   }
 
   .floating-card.card-2 {
-    top: 12%;
-    right: 12%;
-  }
-
-  .floating-card.card-3 {
-    top: 45%;
-    left: 8%;
-  }
-
-  .floating-card.card-4 {
-    top: 65%;
+    top: 20%;
     right: 15%;
   }
 
-  .floating-card.card-5 {
-    top: 75%;
-    left: 45%;
+  .floating-card.card-3 {
+    top: 65%;
+    left: 15%;
+  }
+
+  .floating-card.card-4 {
+    top: 70%;
+    right: 18%;
   }
   
   .card-icon {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .card-text {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -1206,6 +1216,50 @@ body.menu-open {
   
   .solution-desc {
     font-size: 14px;
+  }
+  
+  /* Ensure card-5 stays hidden on small mobile too */
+  .floating-card.card-5 {
+    display: none;
+  }
+  
+  /* Fine-tune positioning for very small screens */
+  .cta-visual {
+    height: 260px;
+  }
+  
+  .floating-card {
+    min-width: 85px;
+    max-width: 105px;
+    padding: 14px;
+  }
+  
+  .floating-card.card-1 {
+    top: 18%;
+    left: 8%;
+  }
+
+  .floating-card.card-2 {
+    top: 22%;
+    right: 10%;
+  }
+
+  .floating-card.card-3 {
+    top: 68%;
+    left: 10%;
+  }
+
+  .floating-card.card-4 {
+    top: 72%;
+    right: 12%;
+  }
+  
+  .card-icon {
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 11px;
   }
 }
 
