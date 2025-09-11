@@ -182,16 +182,28 @@ function initCustomerSolutions() {
         });
     });
     
-    // Add interactive floating animation
+    // Add interactive floating animation for all 5 cards
     floatingCards.forEach((card, index) => {
-        const delay = index * 2000; // 2 second delay between cards
+        const delay = index * 1200; // 1.2 second delay between cards
         
+        // Add subtle pulse animation on interval
         setInterval(() => {
-            card.style.transform += ' scale(1.1)';
+            card.style.transform += ' scale(1.08)';
             setTimeout(() => {
-                card.style.transform = card.style.transform.replace(' scale(1.1)', '');
-            }, 300);
-        }, 6000 + delay);
+                card.style.transform = card.style.transform.replace(' scale(1.08)', '');
+            }, 400);
+        }, 8000 + delay);
+        
+        // Add hover enhancement
+        card.addEventListener('mouseenter', function() {
+            this.style.zIndex = '10';
+            this.style.transform += ' scale(1.1)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.zIndex = '1';
+            this.style.transform = this.style.transform.replace(' scale(1.1)', '');
+        });
     });
     
     // Add click tracking for portfolio button (optional analytics)

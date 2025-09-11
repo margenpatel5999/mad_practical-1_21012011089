@@ -997,7 +997,7 @@ body.menu-open {
 /* CTA Visual */
 .cta-visual {
   position: relative;
-  height: 300px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1015,49 +1015,95 @@ body.menu-open {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 16px;
-  padding: 20px;
+  padding: 18px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  min-width: 120px;
+  min-width: 110px;
+  max-width: 130px;
   animation: floatAnimation 6s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.floating-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Positioned cards in their own dedicated spaces */
 .floating-card.card-1 {
-  top: 20%;
-  left: 10%;
+  top: 5%;
+  left: 5%;
   animation-delay: 0s;
+  animation-name: floatAnimation1;
 }
 
 .floating-card.card-2 {
-  top: 50%;
-  right: 15%;
-  animation-delay: 2s;
+  top: 15%;
+  right: 8%;
+  animation-delay: 1.2s;
+  animation-name: floatAnimation2;
 }
 
 .floating-card.card-3 {
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: 4s;
+  top: 60%;
+  left: 15%;
+  animation-delay: 2.4s;
+  animation-name: floatAnimation3;
+}
+
+.floating-card.card-4 {
+  top: 70%;
+  right: 20%;
+  animation-delay: 3.6s;
+  animation-name: floatAnimation4;
+}
+
+.floating-card.card-5 {
+  top: 40%;
+  left: 45%;
+  animation-delay: 4.8s;
+  animation-name: floatAnimation5;
 }
 
 .card-icon {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 4px;
 }
 
 .card-text {
   font-weight: 600;
   color: #111111;
-  font-size: 14px;
+  font-size: 13px;
+  text-align: center;
 }
 
-@keyframes floatAnimation {
+/* Individual animation patterns to prevent overlap */
+@keyframes floatAnimation1 {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(2deg); }
+  50% { transform: translateY(-25px) rotate(3deg); }
+}
+
+@keyframes floatAnimation2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(-2deg); }
+}
+
+@keyframes floatAnimation3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(1deg); }
+}
+
+@keyframes floatAnimation4 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(-3deg); }
+}
+
+@keyframes floatAnimation5 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-22px) rotate(2deg); }
 }
 
 /* Responsive Design for Customer Solutions */
@@ -1095,20 +1141,47 @@ body.menu-open {
   }
   
   .cta-visual {
-    height: 200px;
+    height: 300px;
   }
   
   .floating-card {
-    min-width: 100px;
-    padding: 16px;
+    min-width: 90px;
+    max-width: 110px;
+    padding: 14px;
+  }
+  
+  /* Mobile positioning - more compact but still separate */
+  .floating-card.card-1 {
+    top: 8%;
+    left: 8%;
+  }
+
+  .floating-card.card-2 {
+    top: 12%;
+    right: 12%;
+  }
+
+  .floating-card.card-3 {
+    top: 45%;
+    left: 8%;
+  }
+
+  .floating-card.card-4 {
+    top: 65%;
+    right: 15%;
+  }
+
+  .floating-card.card-5 {
+    top: 75%;
+    left: 45%;
   }
   
   .card-icon {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .card-text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
