@@ -1,0 +1,385 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://[CLINIC_NAME].com/#organization",
+      "name": "[CLINIC_NAME]",
+      "alternateName": "[CLINIC_NAME] - [SPECIALIZATION] Clinic",
+      "description": "Professional medical clinic providing comprehensive healthcare services including [SPECIALIZATION], general consultation, diagnostic services, and preventive care.",
+      "url": "https://[CLINIC_NAME].com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://[CLINIC_NAME].com/[LOGO_SRC]",
+        "width": 300,
+        "height": 100
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://[CLINIC_NAME].com/assets/images/clinic-exterior.jpg",
+        "width": 800,
+        "height": 600
+      },
+      "telephone": "[PHONE]",
+      "email": "[EMAIL]",
+      "faxNumber": "[FAX_NUMBER]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[ADDRESS]",
+        "addressLocality": "[CITY]",
+        "addressRegion": "[STATE]",
+        "postalCode": "[ZIP]",
+        "addressCountry": "[COUNTRY]"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "[LATITUDE]",
+        "longitude": "[LONGITUDE]"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Medical Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "General Consultation",
+              "description": "Comprehensive medical examination and diagnosis",
+              "procedureType": "Consultation"
+            },
+            "price": "[CONSULTATION_FEE]",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Cardiac Screening",
+              "description": "Complete cardiac examination including ECG and cardiovascular risk assessment",
+              "procedureType": "Diagnostic"
+            },
+            "price": "[CARDIAC_SCREENING_FEE]",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Diabetes Management",
+              "description": "Comprehensive diabetes care including blood sugar monitoring and lifestyle counseling",
+              "procedureType": "Treatment"
+            },
+            "price": "[DIABETES_MANAGEMENT_FEE]",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Health Checkup",
+              "description": "Complete health screening including lab tests and physical examination",
+              "procedureType": "Preventive"
+            },
+            "price": "[HEALTH_CHECKUP_FEE]",
+            "priceCurrency": "INR"
+          }
+        ]
+      },
+      "medicalSpecialty": "[SPECIALIZATION]",
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "General Consultation"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Cardiac Screening"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Diabetes Management"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Hypertension Treatment"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Vaccination Services"
+        },
+        {
+          "@type": "MedicalTest",
+          "name": "Laboratory Services"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Telemedicine Consultation"
+        }
+      ],
+      "paymentAccepted": [
+        "Cash",
+        "Credit Card",
+        "Debit Card",
+        "UPI",
+        "Net Banking",
+        "Insurance"
+      ],
+      "currenciesAccepted": "INR",
+      "priceRange": "₹₹",
+      "smokingAllowed": false,
+      "isAccessibleForFree": false,
+      "hasMap": "https://maps.google.com/?q=[ADDRESS],[CITY]",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Parking",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Wheelchair Accessible",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Air Conditioning",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "WiFi",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Pharmacy",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Laboratory",
+          "value": true
+        }
+      ],
+      "sameAs": [
+        "[FACEBOOK_URL]",
+        "[TWITTER_URL]",
+        "[INSTAGRAM_URL]",
+        "[LINKEDIN_URL]"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://[CLINIC_NAME].com/#physician",
+      "name": "[DR_NAME]",
+      "givenName": "[DR_FIRST_NAME]",
+      "familyName": "[DR_LAST_NAME]",
+      "honorificPrefix": "Dr.",
+      "jobTitle": "[SPECIALIZATION]",
+      "description": "Experienced [SPECIALIZATION] with over 15 years of practice in comprehensive medical care, specializing in [SPECIALTY_AREAS].",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://[CLINIC_NAME].com/assets/images/doctor-portrait.jpg",
+        "width": 400,
+        "height": 400
+      },
+      "worksFor": {
+        "@id": "https://[CLINIC_NAME].com/#organization"
+      },
+      "medicalSpecialty": "[SPECIALIZATION]",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "[MEDICAL_COLLEGE]"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "MBBS",
+          "description": "Bachelor of Medicine, Bachelor of Surgery"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "MD ([SPECIALIZATION])",
+          "description": "Doctor of Medicine in [SPECIALIZATION]"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Indian Medical Association"
+        },
+        {
+          "@type": "Organization",
+          "name": "Association of Physicians of India"
+        }
+      ],
+      "knowsAbout": [
+        "[SPECIALIZATION]",
+        "General Medicine",
+        "Preventive Care",
+        "Diabetes Management",
+        "Hypertension Treatment",
+        "Cardiac Care"
+      ],
+      "telephone": "[PHONE]",
+      "email": "[EMAIL]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[ADDRESS]",
+        "addressLocality": "[CITY]",
+        "addressRegion": "[STATE]",
+        "postalCode": "[ZIP]",
+        "addressCountry": "[COUNTRY]"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://[CLINIC_NAME].com/#localbusiness",
+      "name": "[CLINIC_NAME]",
+      "description": "Professional medical clinic providing quality healthcare services in [CITY]. Specializing in [SPECIALIZATION] with comprehensive medical care.",
+      "url": "https://[CLINIC_NAME].com",
+      "telephone": "[PHONE]",
+      "email": "[EMAIL]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[ADDRESS]",
+        "addressLocality": "[CITY]",
+        "addressRegion": "[STATE]",
+        "postalCode": "[ZIP]",
+        "addressCountry": "[COUNTRY]"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "[LATITUDE]",
+        "longitude": "[LONGITUDE]"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Ramesh Patel"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Excellent doctor with great patient care. The clinic environment is very good and staff is helpful.",
+          "datePublished": "2024-01-15"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Priya Sharma"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Very professional service and modern facilities. Doctor explains everything patiently.",
+          "datePublished": "2024-01-10"
+        }
+      ],
+      "priceRange": "₹₹",
+      "paymentAccepted": [
+        "Cash",
+        "Credit Card",
+        "Debit Card",
+        "UPI",
+        "Net Banking"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://[CLINIC_NAME].com/#website",
+      "url": "https://[CLINIC_NAME].com",
+      "name": "[CLINIC_NAME] - Medical Clinic Website",
+      "description": "Professional medical clinic website providing information about services, doctors, and online appointment booking.",
+      "publisher": {
+        "@id": "https://[CLINIC_NAME].com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://[CLINIC_NAME].com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": ["en", "gu"]
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://[CLINIC_NAME].com/#contact",
+      "telephone": "[PHONE]",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Gujarati", "Hindi"],
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "[CITY]"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://[CLINIC_NAME].com/#appointment-booking",
+      "name": "Online Appointment Booking",
+      "description": "Book medical appointments online with [DR_NAME] at [CLINIC_NAME]",
+      "provider": {
+        "@id": "https://[CLINIC_NAME].com/#organization"
+      },
+      "serviceType": "Medical Appointment Booking",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://[CLINIC_NAME].com/contact.html",
+        "serviceName": "Online Booking System"
+      }
+    }
+  ]
+}

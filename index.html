@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[CLINIC_NAME] - Professional medical care with [DR_NAME], [SPECIALIZATION]. Book your appointment today for quality healthcare services.">
+    <meta name="keywords" content="medical clinic, [SPECIALIZATION], [DR_NAME], healthcare, [CITY], medical services">
+    <meta name="author" content="[CLINIC_NAME]">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="[CLINIC_NAME] - Quality Healthcare Services">
+    <meta property="og:description" content="Professional medical care with [DR_NAME], [SPECIALIZATION]. Book your appointment today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://[CLINIC_NAME].com">
+    <meta property="og:image" content="assets/images/clinic-exterior.jpg">
+    <link rel="canonical" href="https://[CLINIC_NAME].com">
+    
+    <title>[CLINIC_NAME] - Quality Healthcare with [DR_NAME]</title>
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "[CLINIC_NAME]",
+      "description": "Professional medical clinic providing [SPECIALIZATION] services",
+      "url": "https://[CLINIC_NAME].com",
+      "telephone": "[PHONE]",
+      "email": "[EMAIL]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[ADDRESS]",
+        "addressLocality": "[CITY]",
+        "addressRegion": "[STATE]",
+        "postalCode": "[ZIP]",
+        "addressCountry": "[COUNTRY]"
+      },
+      "openingHours": "[HOURS]",
+      "medicalSpecialty": "[SPECIALIZATION]",
+      "physician": {
+        "@type": "Physician",
+        "name": "[DR_NAME]",
+        "medicalSpecialty": "[SPECIALIZATION]"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="[CLINIC_NAME] Home">
+                <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                [CLINIC_NAME]
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active" aria-current="page">હોમ / Home</a></li>
+                <li><a href="about.html" class="nav-link">વિશે / About</a></li>
+                <li><a href="services.html" class="nav-link">સેવાઓ / Services</a></li>
+                <li><a href="team.html" class="nav-link">ટીમ / Team</a></li>
+                <li><a href="gallery.html" class="nav-link">ગેલેરી / Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">સંપર્ક / Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1 id="hero-title">
+                        આપનું સ્વાસ્થ્ય, અમારી પ્રાથમિકતા<br>
+                        <span style="font-size: 0.8em; opacity: 0.9;">Your Health, Our Priority</span>
+                    </h1>
+                    <p>
+                        [DR_NAME] સાથે વ્યાવસાયિક તબીબી સેવા મેળવો<br>
+                        Professional medical care with [DR_NAME], [SPECIALIZATION]
+                    </p>
+                    <div class="hero-actions">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                            એપોઇન્ટમેન્ટ બુક કરો / Book Appointment
+                        </a>
+                        <a href="services.html" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-stethoscope" aria-hidden="true"></i>
+                            સેવાઓ જુઓ / View Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Info Section -->
+        <section class="section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <div class="grid grid-3">
+                    <div class="card text-center slide-in-left">
+                        <div class="card-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h3>કલાક / Hours</h3>
+                        <p>[HOURS]</p>
+                    </div>
+                    
+                    <div class="card text-center fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <h3>કોલ કરો / Call Us</h3>
+                        <p><a href="tel:[PHONE]">[PHONE]</a></p>
+                    </div>
+                    
+                    <div class="card text-center slide-in-right">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>સ્થાન / Location</h3>
+                        <p>[ADDRESS], [CITY]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Services Section -->
+        <section class="section" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="services-title" class="section-title">
+                        અમારી મુખ્ય સેવાઓ / Our Key Services
+                    </h2>
+                    <p class="section-subtitle">
+                        વ્યાપક તબીબી સેવાઓ જે તમારી તમામ આરોગ્ય જરૂરિયાતોને પૂરી કરે છે<br>
+                        Comprehensive medical services that meet all your healthcare needs
+                    </p>
+                </div>
+                
+                <div class="grid grid-3">
+                    <article class="card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-user-md" aria-hidden="true"></i>
+                        </div>
+                        <h3>સામાન્ય તપાસ / General Consultation</h3>
+                        <p>
+                            સંપૂર્ણ તબીબી તપાસ અને નિદાન સેવાઓ<br>
+                            Complete medical examination and diagnostic services
+                        </p>
+                        <div class="service-details">
+                            <span class="service-duration">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                30-45 મિનિટ / minutes
+                            </span>
+                            <span class="service-price">₹[PRICE_RANGE]</span>
+                        </div>
+                        <a href="services.html#general-consultation" class="btn btn-secondary">
+                            વધુ જાણો / Learn More
+                        </a>
+                    </article>
+                    
+                    <article class="card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                        </div>
+                        <h3>હૃદય તપાસ / Cardiac Screening</h3>
+                        <p>
+                            હૃદયની સંપૂર્ણ તપાસ અને ECG સેવાઓ<br>
+                            Complete cardiac examination and ECG services
+                        </p>
+                        <div class="service-details">
+                            <span class="service-duration">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                45-60 મિનિટ / minutes
+                            </span>
+                            <span class="service-price">₹[PRICE_RANGE]</span>
+                        </div>
+                        <a href="services.html#cardiac-screening" class="btn btn-secondary">
+                            વધુ જાણો / Learn More
+                        </a>
+                    </article>
+                    
+                    <article class="card fade-in">
+                        <div class="card-icon">
+                            <i class="fas fa-pills" aria-hidden="true"></i>
+                        </div>
+                        <h3>દવા સલાહ / Medication Consultation</h3>
+                        <p>
+                            દવાની સલાહ અને પ્રિસ્ક્રિપ્શન સેવાઓ<br>
+                            Medication advice and prescription services
+                        </p>
+                        <div class="service-details">
+                            <span class="service-duration">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                20-30 મિનિટ / minutes
+                            </span>
+                            <span class="service-price">₹[PRICE_RANGE]</span>
+                        </div>
+                        <a href="services.html#medication-consultation" class="btn btn-secondary">
+                            વધુ જાણો / Learn More
+                        </a>
+                    </article>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="services.html" class="btn btn-primary btn-lg">
+                        બધી સેવાઓ જુઓ / View All Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor Introduction Section -->
+        <section class="section" style="background-color: var(--light-gray);" aria-labelledby="doctor-intro-title">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center;">
+                    <div class="slide-in-left">
+                        <img src="assets/images/doctor-portrait.jpg" 
+                             alt="Dr. [DR_NAME] - [SPECIALIZATION] at [CLINIC_NAME]"
+                             style="width: 100%; max-width: 400px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                    </div>
+                    
+                    <div class="slide-in-right">
+                        <h2 id="doctor-intro-title" class="section-title">
+                            ડૉ. [DR_NAME] સાથે મળો / Meet Dr. [DR_NAME]
+                        </h2>
+                        <p class="mb-4">
+                            <strong>[SPECIALIZATION]</strong> ક્ષેત્રમાં 15+ વર્ષનો અનુભવ<br>
+                            15+ years of experience in [SPECIALIZATION]
+                        </p>
+                        <p class="mb-4">
+                            અમારા અનુભવી ડૉક્ટર તમને શ્રેષ્ઠ તબીબી સેવા પ્રદાન કરવા માટે પ્રતિબદ્ધ છે. 
+                            આધુનિક તકનીક અને પરંપરાગત તબીબી જ્ઞાનનો ઉપયોગ કરીને અમે તમારી સંપૂર્ણ સંભાળ રાખીએ છીએ.
+                        </p>
+                        <p class="mb-4">
+                            Our experienced doctor is committed to providing you with the best medical care. 
+                            We take complete care of you using modern technology and traditional medical knowledge.
+                        </p>
+                        <div class="doctor-credentials">
+                            <ul style="list-style: none; padding: 0;">
+                                <li><i class="fas fa-graduation-cap text-primary"></i> MBBS, MD ([SPECIALIZATION])</li>
+                                <li><i class="fas fa-certificate text-primary"></i> Board Certified [SPECIALIZATION]</li>
+                                <li><i class="fas fa-award text-primary"></i> Member, Indian Medical Association</li>
+                            </ul>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">
+                            વધુ જાણો / Learn More About Dr. [DR_NAME]
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patient Testimonials Section -->
+        <section class="section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="testimonials-title" class="section-title">
+                        દર્દીઓના અભિપ્રાય / Patient Testimonials
+                    </h2>
+                    <p class="section-subtitle">
+                        અમારા દર્દીઓ અમારી સેવા વિશે શું કહે છે<br>
+                        What our patients say about our services
+                    </p>
+                </div>
+                
+                <div class="testimonials-carousel" id="testimonials-carousel">
+                    <div class="testimonial-slide active">
+                        <div class="card text-center">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <blockquote>
+                                <p>
+                                    "ડૉ. [DR_NAME] ખૂબ જ સારા ડૉક્ટર છે. તેમની સલાહથી મારું સ્વાસ્થ્ય ઘણું સુધર્યું છે. 
+                                    ક્લિનિકનો વાતાવરણ પણ ખૂબ સારો છે."
+                                </p>
+                                <p>
+                                    "Dr. [DR_NAME] is an excellent doctor. My health has improved significantly with their advice. 
+                                    The clinic environment is also very good."
+                                </p>
+                            </blockquote>
+                            <cite>
+                                <strong>રમેશ પટેલ / Ramesh Patel</strong><br>
+                                <span>દર્દી / Patient</span>
+                            </cite>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="card text-center">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <blockquote>
+                                <p>
+                                    "અહીં આવવાનો અનુભવ ખૂબ સારો રહ્યો. સ્ટાફ ખૂબ મદદરૂપ છે અને ડૉક્ટર ધીરજથી બધું સમજાવે છે. 
+                                    એપોઇન્ટમેન્ટ લેવાની પ્રક્રિયા પણ સરળ છે."
+                                </p>
+                                <p>
+                                    "The experience of coming here was very good. The staff is very helpful and the doctor 
+                                    explains everything patiently. The appointment process is also easy."
+                                </p>
+                            </blockquote>
+                            <cite>
+                                <strong>પ્રિયા શર્મા / Priya Sharma</strong><br>
+                                <span>દર્દી / Patient</span>
+                            </cite>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="card text-center">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <blockquote>
+                                <p>
+                                    "આ ક્લિનિકમાં આધુનિક સુવિધાઓ છે અને ડૉક્ટરનું વર્તન ખૂબ સારું છે. 
+                                    મારા પરિવારની તબીબી જરૂરિયાતો માટે અમે હંમેશા અહીં આવીએ છીએ."
+                                </p>
+                                <p>
+                                    "This clinic has modern facilities and the doctor's behavior is very good. 
+                                    We always come here for our family's medical needs."
+                                </p>
+                            </blockquote>
+                            <cite>
+                                <strong>અનિલ ગુપ્તા / Anil Gupta</strong><br>
+                                <span>દર્દી / Patient</span>
+                            </cite>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls text-center mt-4">
+                    <button class="btn btn-secondary" id="prev-testimonial" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <button class="btn btn-secondary" id="next-testimonial" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact Section -->
+        <section class="section" style="background-color: var(--error); color: var(--white);" aria-labelledby="emergency-title">
+            <div class="container text-center">
+                <h2 id="emergency-title" style="color: var(--white);">
+                    <i class="fas fa-ambulance" aria-hidden="true"></i>
+                    કટોકટી / Emergency
+                </h2>
+                <p style="font-size: var(--fs-xl); margin-bottom: var(--spacing-lg);">
+                    તબીબી કટોકટી માટે તુરંત કૉલ કરો / For medical emergencies, call immediately
+                </p>
+                <a href="tel:108" class="btn" style="background-color: var(--white); color: var(--error); font-weight: bold; font-size: var(--fs-xl);">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    108 - Emergency Helpline
+                </a>
+                <p style="margin-top: var(--spacing-md); opacity: 0.9;">
+                    અથવા અમારા ક્લિનિક નંબર પર કૉલ કરો: <a href="tel:[PHONE]" style="color: var(--white); font-weight: bold;">[PHONE]</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Map Preview Section -->
+        <section class="section" style="background-color: var(--light-gray);" aria-labelledby="location-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="location-title" class="section-title">
+                        અમારું સ્થાન / Our Location
+                    </h2>
+                    <p class="section-subtitle">
+                        અમારા ક્લિનિકમાં આવવા માટે નીચેનો નકશો જુઓ<br>
+                        View the map below to visit our clinic
+                    </p>
+                </div>
+                
+                <div class="map-container" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
+                    <iframe 
+                        src="[MAP_EMBED_SRC]"
+                        width="100%" 
+                        height="400"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="[CLINIC_NAME] Location Map"
+                        aria-label="Interactive map showing [CLINIC_NAME] location">
+                    </iframe>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="contact.html" class="btn btn-primary">
+                        સંપૂર્ણ સંપર્ક માહિતી / Full Contact Information
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="grid grid-4">
+                <div>
+                    <h3>
+                        <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                        [CLINIC_NAME]
+                    </h3>
+                    <p>
+                        તમારા સ્વાસ્થ્યની સંભાળ અમારી જવાબદારી છે<br>
+                        Taking care of your health is our responsibility
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>સંપર્ક / Contact</h3>
+                    <address style="font-style: normal;">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> [ADDRESS], [CITY], [STATE] [ZIP]</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:[PHONE]">[PHONE]</a></p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3>કલાક / Hours</h3>
+                    <p>[HOURS]</p>
+                    <p><strong>કટોકટી / Emergency:</strong><br>24/7 Available</p>
+                </div>
+                
+                <div>
+                    <h3>ઝડપી લિંક્સ / Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="about.html">વિશે / About</a></li>
+                        <li><a href="services.html">સેવાઓ / Services</a></li>
+                        <li><a href="contact.html">એપોઇન્ટમેન્ટ / Appointment</a></li>
+                        <li><a href="gallery.html">FAQ</a></li>
+                        <li><a href="#" onclick="window.print()">Print Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 [CLINIC_NAME]. બધા અધિકારો આરક્ષિત / All rights reserved. | 
+                    <a href="#privacy">Privacy Policy</a> | 
+                    <a href="#terms">Terms of Service</a>
+                </p>
+                <p style="font-size: var(--fs-sm); margin-top: var(--spacing-sm);">
+                    Medical License: [LICENSE_NUMBER] | 
+                    Registration: [REGISTRATION_NUMBER]
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
+    
+    <!-- Fallback content for users with JavaScript disabled -->
+    <noscript>
+        <div style="background-color: var(--warning); color: var(--black); padding: var(--spacing-md); text-align: center;">
+            <p>
+                <strong>JavaScript is disabled in your browser.</strong><br>
+                Some features may not work properly. Please enable JavaScript for the best experience.<br>
+                <strong>JavaScript તમારા બ્રાઉઝરમાં બંધ છે.</strong><br>
+                કેટલાક ફીચર્સ યોગ્ય રીતે કામ ન કરી શકે. શ્રેષ્ઠ અનુભવ માટે કૃપા કરીને JavaScript સક્ષમ કરો.
+            </p>
+        </div>
+    </noscript>
+</body>
+</html>
