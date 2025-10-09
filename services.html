@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive medical services at [CLINIC_NAME] with [DR_NAME]. [SPECIALIZATION], consultations, diagnostics, and preventive care.">
+    <meta name="keywords" content="medical services, [SPECIALIZATION], health checkup, consultation, [CLINIC_NAME], [CITY], healthcare">
+    <meta name="author" content="[CLINIC_NAME]">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Medical Services - [CLINIC_NAME]">
+    <meta property="og:description" content="Comprehensive medical services including [SPECIALIZATION], consultations, and preventive care.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://[CLINIC_NAME].com/services.html">
+    <meta property="og:image" content="assets/images/medical-services.jpg">
+    <link rel="canonical" href="https://[CLINIC_NAME].com/services.html">
+    
+    <title>Medical Services - [CLINIC_NAME] | [DR_NAME]</title>
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Structured Data for Medical Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "[CLINIC_NAME]",
+      "medicalSpecialty": "[SPECIALIZATION]",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Medical Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "General Consultation",
+              "description": "Comprehensive medical examination and diagnosis"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalProcedure",
+              "name": "Cardiac Screening",
+              "description": "Complete cardiac examination and ECG services"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="[CLINIC_NAME] Home">
+                <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                [CLINIC_NAME]
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">હોમ / Home</a></li>
+                <li><a href="about.html" class="nav-link">વિશે / About</a></li>
+                <li><a href="services.html" class="nav-link active" aria-current="page">સેવાઓ / Services</a></li>
+                <li><a href="team.html" class="nav-link">ટીમ / Team</a></li>
+                <li><a href="gallery.html" class="nav-link">ગેલેરી / Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">સંપર્ક / Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="hero" style="padding: calc(80px + var(--spacing-2xl)) 0 var(--spacing-2xl);">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1>
+                        અમારી તબીબી સેવાઓ<br>
+                        <span style="font-size: 0.8em; opacity: 0.9;">Our Medical Services</span>
+                    </h1>
+                    <p>
+                        વ્યાપક તબીબી સંભાળ અને આધુનિક સુવિધાઓ સાથે તમારા સ્વાસ્થ્યની સંપૂર્ણ સંભાળ<br>
+                        Comprehensive medical care with modern facilities for your complete health
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Filter Section -->
+        <section class="section" style="background-color: var(--light-gray); padding: var(--spacing-xl) 0;">
+            <div class="container">
+                <div class="services-filter text-center">
+                    <h2 class="sr-only">Filter Services</h2>
+                    <div class="filter-buttons">
+                        <button class="btn btn-secondary filter-btn active" data-filter="all">
+                            બધી સેવાઓ / All Services
+                        </button>
+                        <button class="btn btn-secondary filter-btn" data-filter="consultation">
+                            સલાહ / Consultation
+                        </button>
+                        <button class="btn btn-secondary filter-btn" data-filter="diagnostic">
+                            નિદાન / Diagnostic
+                        </button>
+                        <button class="btn btn-secondary filter-btn" data-filter="treatment">
+                            સારવાર / Treatment
+                        </button>
+                        <button class="btn btn-secondary filter-btn" data-filter="preventive">
+                            નિવારક / Preventive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Services Section -->
+        <section class="section" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="services-title" class="section-title">
+                        સંપૂર્ણ તબીબી સેવાઓ / Comprehensive Medical Services
+                    </h2>
+                    <p class="section-subtitle">
+                        અમે તમારી તમામ તબીબી જરૂરિયાતો માટે વિશેષ સેવાઓ પ્રદાન કરીએ છીએ<br>
+                        We provide specialized services for all your medical needs
+                    </p>
+                </div>
+                
+                <div class="services-grid grid grid-3">
+                    <!-- General Consultation -->
+                    <article class="service-card card fade-in" data-category="consultation" id="general-consultation">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>સામાન્ય તપાસ / General Consultation</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.9/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                સંપૂર્ણ તબીબી તપાસ, નિદાન અને સારવારની સલાહ. તમારી તબીબી ઇતિહાસની સમીક્ષા 
+                                અને વર્તમાન સ્વાસ્થ્ય સ્થિતિનું મૂલ્યાંકન.
+                            </p>
+                            <p>
+                                Complete medical examination, diagnosis and treatment advice. Review of your 
+                                medical history and assessment of current health condition.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    30-45 મિનિટ / minutes
+                                </span>
+                                <span class="service-price">₹500-800</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Physical Examination</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Medical History Review</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Prescription & Advice</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Follow-up Plan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=general-consultation" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Cardiac Screening -->
+                    <article class="service-card card fade-in" data-category="diagnostic" id="cardiac-screening">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>હૃદય તપાસ / Cardiac Screening</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.8/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                હૃદયની સંપૂર્ણ તપાસ, ECG, બ્લડ પ્રેશર મોનિટરિંગ અને કાર્ડિયોવેસ્ક્યુલર રિસ્ક 
+                                એસેસમેન્ટ. હાર્ટ અટેક અને અન્ય હૃદયરોગોનું જોખમ ઓછું કરવા માટે.
+                            </p>
+                            <p>
+                                Complete cardiac examination, ECG, blood pressure monitoring and cardiovascular 
+                                risk assessment. To reduce risk of heart attack and other heart diseases.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    45-60 મિનિટ / minutes
+                                </span>
+                                <span class="service-price">₹1200-1800</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> 12-Lead ECG</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Blood Pressure Monitoring</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Cardiac Risk Assessment</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Lifestyle Counseling</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=cardiac-screening" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Diabetes Management -->
+                    <article class="service-card card fade-in" data-category="treatment" id="diabetes-management">
+                        <div class="service-icon">
+                            <i class="fas fa-pills" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>મધુમેહ સંભાળ / Diabetes Management</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.9/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                ટાઇપ 1 અને ટાઇપ 2 ડાયાબિટીસનું સંપૂર્ણ મેનેજમેન્ટ. બ્લડ સુગર કંટ્રોલ, 
+                                ઇન્સુલિન થેરાપી, આહાર સલાહ અને જટિલતાઓનું નિવારણ.
+                            </p>
+                            <p>
+                                Complete management of Type 1 and Type 2 diabetes. Blood sugar control, 
+                                insulin therapy, diet counseling and complication prevention.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    40-50 મિનિટ / minutes
+                                </span>
+                                <span class="service-price">₹800-1200</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Blood Sugar Testing</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> HbA1c Monitoring</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Diet Plan</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Medication Adjustment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=diabetes-management" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Hypertension Treatment -->
+                    <article class="service-card card fade-in" data-category="treatment" id="hypertension-treatment">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>હાયપરટેન્શન સારવાર / Hypertension Treatment</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.7/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                હાઈ બ્લડ પ્રેશરનું નિદાન, સારવાર અને નિયંત્રણ. લાઇફસ્ટાઇલ મોડિફિકેશન અને 
+                                દવાઓ દ્વારા બ્લડ પ્રેશર કંટ્રોલ કરવું.
+                            </p>
+                            <p>
+                                Diagnosis, treatment and control of high blood pressure. Blood pressure 
+                                control through lifestyle modification and medications.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    35-45 મિનિટ / minutes
+                                </span>
+                                <span class="service-price">₹600-1000</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> BP Monitoring</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Risk Factor Assessment</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Medication Management</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Lifestyle Guidance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=hypertension-treatment" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Health Checkup -->
+                    <article class="service-card card fade-in" data-category="preventive" id="health-checkup">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>સંપૂર્ણ હેલ્થ ચેકઅપ / Complete Health Checkup</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.8/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                વાર્ષિક સંપૂર્ણ સ્વાસ્થ્ય તપાસ જેમાં લેબ ટેસ્ટ, રેડિયોલોજી અને વિશેષ તપાસ 
+                                શામેલ છે. રોગોનું વહેલું નિદાન અને નિવારણ.
+                            </p>
+                            <p>
+                                Annual complete health checkup including lab tests, radiology and special 
+                                examinations. Early diagnosis and prevention of diseases.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    2-3 કલાક / hours
+                                </span>
+                                <span class="service-price">₹3000-5000</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Complete Blood Count</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Lipid Profile</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Chest X-Ray</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> ECG & Consultation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=health-checkup" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Vaccination Services -->
+                    <article class="service-card card fade-in" data-category="preventive" id="vaccination">
+                        <div class="service-icon">
+                            <i class="fas fa-syringe" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>રસીકરણ સેવાઓ / Vaccination Services</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.9/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                બાળકો અને પુખ્ત વયના લોકો માટે તમામ જરૂરી રસીકરણ. COVID-19, ફ્લુ, 
+                                હેપેટાઇટિસ અને અન્ય રસીઓ ઉપલબ્ધ છે.
+                            </p>
+                            <p>
+                                All necessary vaccinations for children and adults. COVID-19, flu, 
+                                hepatitis and other vaccines available.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    15-30 મિનિટ / minutes
+                                </span>
+                                <span class="service-price">₹200-1500</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Pre-vaccination Screening</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Vaccine Administration</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Post-vaccination Monitoring</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Vaccination Certificate</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=vaccination" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Laboratory Services -->
+                    <article class="service-card card fade-in" data-category="diagnostic" id="laboratory-services">
+                        <div class="service-icon">
+                            <i class="fas fa-microscope" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>લેબોરેટરી સેવાઓ / Laboratory Services</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.8/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                સંપૂર્ણ લેબોરેટરી સેવાઓ જેમાં બ્લડ ટેસ્ટ, યુરિન ટેસ્ટ, સ્ટૂલ ટેસ્ટ અને 
+                                અન્ય ડાયગ્નોસ્ટિક ટેસ્ટ શામેલ છે.
+                            </p>
+                            <p>
+                                Complete laboratory services including blood tests, urine tests, stool tests 
+                                and other diagnostic tests.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    10-20 મિનિટ / minutes
+                                </span>
+                                <span class="service-price">₹100-2000</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Sample Collection</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Laboratory Analysis</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Digital Reports</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Report Interpretation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=laboratory-services" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Telemedicine -->
+                    <article class="service-card card fade-in" data-category="consultation" id="telemedicine">
+                        <div class="service-icon">
+                            <i class="fas fa-video" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>ટેલિમેડિસિન / Telemedicine</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.6/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                ઘરેથી વિડિયો કૉલ દ્વારા ડૉક્ટર સાથે સલાહ લો. અનુવર્તી મુલાકાત, દવાની 
+                                સમીક્ષા અને તાત્કાલિક સલાહ માટે આદર્શ.
+                            </p>
+                            <p>
+                                Consult with doctor via video call from home. Ideal for follow-up visits, 
+                                medication review and immediate advice.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    20-30 મિનિટ / minutes
+                                </span>
+                                <span class="service-price">₹300-600</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Video Consultation</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Digital Prescription</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Medical Advice</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Follow-up Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="contact.html?service=telemedicine" class="btn btn-primary">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                બુક કરો / Book Now
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Emergency Care -->
+                    <article class="service-card card fade-in" data-category="treatment" id="emergency-care">
+                        <div class="service-icon">
+                            <i class="fas fa-ambulance" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-header">
+                            <h3>કટોકટી સંભાળ / Emergency Care</h3>
+                            <div class="service-rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <span>(4.9/5)</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>
+                                24/7 કટોકટી તબીબી સેવાઓ. તાત્કાલિક તબીબી સહાય, પ્રાથમિક સારવાર અને 
+                                જરૂર પડે તો હોસ્પિટલમાં રેફરલ.
+                            </p>
+                            <p>
+                                24/7 emergency medical services. Immediate medical assistance, primary treatment 
+                                and hospital referral if needed.
+                            </p>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-info">
+                                <span class="service-duration">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    તાત્કાલિક / Immediate
+                                </span>
+                                <span class="service-price">₹1000-3000</span>
+                            </div>
+                            <div class="service-includes">
+                                <h4>શામેલ છે / Includes:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Immediate Assessment</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Emergency Treatment</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Stabilization</li>
+                                    <li><i class="fas fa-check text-success" aria-hidden="true"></i> Referral if Needed</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="tel:[PHONE]" class="btn btn-primary" style="background-color: var(--error);">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                તાત્કાલિક કૉલ / Emergency Call
+                            </a>
+                            <button class="btn btn-secondary" onclick="toggleServiceDetails(this)">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                વધુ જાણો / Learn More
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Packages Section -->
+        <section class="section" style="background-color: var(--light-gray);" aria-labelledby="packages-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="packages-title" class="section-title">
+                        સ્પેશિયલ પેકેજ / Special Packages
+                    </h2>
+                    <p class="section-subtitle">
+                        વિશેષ ડિસ્કાઉન્ટ સાથે કોમ્બો પેકેજ<br>
+                        Combo packages with special discounts
+                    </p>
+                </div>
+                
+                <div class="packages-grid grid grid-3">
+                    <div class="package-card card fade-in">
+                        <div class="package-header">
+                            <h3>બેસિક હેલ્થ પેકેજ / Basic Health Package</h3>
+                            <div class="package-price">
+                                <span class="original-price">₹2000</span>
+                                <span class="discounted-price">₹1500</span>
+                                <span class="discount-badge">25% OFF</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> General Consultation</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Basic Blood Tests</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Blood Pressure Check</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> BMI Assessment</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?package=basic-health" class="btn btn-primary">
+                            પેકેજ બુક કરો / Book Package
+                        </a>
+                    </div>
+                    
+                    <div class="package-card card fade-in" style="border: 2px solid var(--primary-green);">
+                        <div class="package-badge">Most Popular</div>
+                        <div class="package-header">
+                            <h3>કોમ્પ્રીહેન્સિવ પેકેજ / Comprehensive Package</h3>
+                            <div class="package-price">
+                                <span class="original-price">₹4000</span>
+                                <span class="discounted-price">₹2800</span>
+                                <span class="discount-badge">30% OFF</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Complete Health Checkup</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Cardiac Screening</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Diabetes Screening</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Lab Tests Package</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Follow-up Consultation</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?package=comprehensive" class="btn btn-primary">
+                            પેકેજ બુક કરો / Book Package
+                        </a>
+                    </div>
+                    
+                    <div class="package-card card fade-in">
+                        <div class="package-header">
+                            <h3>સીનિયર સિટિઝન પેકેજ / Senior Citizen Package</h3>
+                            <div class="package-price">
+                                <span class="original-price">₹3500</span>
+                                <span class="discounted-price">₹2500</span>
+                                <span class="discount-badge">28% OFF</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Geriatric Assessment</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Bone Health Check</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Vision & Hearing Test</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Medication Review</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Nutritional Counseling</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?package=senior-citizen" class="btn btn-primary">
+                            પેકેજ બુક કરો / Book Package
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insurance & Payment Section -->
+        <section class="section" aria-labelledby="payment-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="payment-title" class="section-title">
+                        વીમો અને ચુકવણી / Insurance & Payment
+                    </h2>
+                    <p class="section-subtitle">
+                        અમે વિવિધ વીમા યોજનાઓ અને ચુકવણીની પદ્ધતિઓ સ્વીકારીએ છીએ<br>
+                        We accept various insurance plans and payment methods
+                    </p>
+                </div>
+                
+                <div class="grid grid-2">
+                    <div class="card fade-in">
+                        <h3>
+                            <i class="fas fa-shield-alt text-primary" aria-hidden="true"></i>
+                            સ્વીકૃત વીમા / Accepted Insurance
+                        </h3>
+                        <div class="insurance-list">
+                            <ul style="list-style: none; padding: 0;">
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Star Health Insurance</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> HDFC ERGO Health</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> ICICI Lombard</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Bajaj Allianz</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> New India Assurance</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Government Employee Schemes</li>
+                                <li><i class="fas fa-check text-success" aria-hidden="true"></i> Corporate Health Plans</li>
+                            </ul>
+                        </div>
+                        <p style="margin-top: var(--spacing-lg); font-size: var(--fs-sm); color: var(--medium-gray);">
+                            વીમા કવરેજ વિશે વધુ માહિતી માટે અમારી સાથે સંપર્ક કરો<br>
+                            Contact us for more information about insurance coverage
+                        </p>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <h3>
+                            <i class="fas fa-credit-card text-primary" aria-hidden="true"></i>
+                            ચુકવણીની પદ્ધતિઓ / Payment Methods
+                        </h3>
+                        <div class="payment-methods">
+                            <ul style="list-style: none; padding: 0;">
+                                <li><i class="fas fa-money-bill text-success" aria-hidden="true"></i> Cash Payment</li>
+                                <li><i class="fas fa-credit-card text-success" aria-hidden="true"></i> Credit/Debit Cards</li>
+                                <li><i class="fas fa-mobile-alt text-success" aria-hidden="true"></i> UPI (PhonePe, GPay, Paytm)</li>
+                                <li><i class="fas fa-university text-success" aria-hidden="true"></i> Net Banking</li>
+                                <li><i class="fas fa-qrcode text-success" aria-hidden="true"></i> QR Code Payment</li>
+                                <li><i class="fas fa-handshake text-success" aria-hidden="true"></i> EMI Options Available</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: var(--spacing-lg);">
+                            <p style="font-size: var(--fs-sm); color: var(--medium-gray);">
+                                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                                બધી ચુકવણીઓ સુરક્ષિત અને એન્ક્રિપ્ટેડ છે<br>
+                                All payments are secure and encrypted
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-green-light) 0%, var(--primary-green) 100%); color: var(--white);">
+            <div class="container text-center">
+                <h2 style="color: var(--white); margin-bottom: var(--spacing-lg);">
+                    આજે જ તમારી સેવા બુક કરો / Book Your Service Today
+                </h2>
+                <p style="font-size: var(--fs-lg); margin-bottom: var(--spacing-xl); opacity: 0.9;">
+                    ડૉ. [DR_NAME] સાથે તમારી આરોગ્ય યાત્રા શરૂ કરો<br>
+                    Start your health journey with Dr. [DR_NAME]
+                </p>
+                <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn" style="background-color: var(--white); color: var(--primary-green); font-weight: bold;">
+                        <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                        એપોઇન્ટમેન્ટ બુક કરો / Book Appointment
+                    </a>
+                    <a href="tel:[PHONE]" class="btn btn-secondary" style="border-color: var(--white); color: var(--white);">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        કૉલ કરો / Call: [PHONE]
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="grid grid-4">
+                <div>
+                    <h3>
+                        <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                        [CLINIC_NAME]
+                    </h3>
+                    <p>
+                        તમારા સ્વાસ્થ્યની સંભાળ અમારી જવાબદારી છે<br>
+                        Taking care of your health is our responsibility
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>સંપર્ક / Contact</h3>
+                    <address style="font-style: normal;">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> [ADDRESS], [CITY], [STATE] [ZIP]</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:[PHONE]">[PHONE]</a></p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3>કલાક / Hours</h3>
+                    <p>[HOURS]</p>
+                    <p><strong>કટોકટી / Emergency:</strong><br>24/7 Available</p>
+                </div>
+                
+                <div>
+                    <h3>ઝડપી લિંક્સ / Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="index.html">હોમ / Home</a></li>
+                        <li><a href="about.html">વિશે / About</a></li>
+                        <li><a href="contact.html">એપોઇન્ટમેન્ટ / Appointment</a></li>
+                        <li><a href="gallery.html">FAQ</a></li>
+                        <li><a href="#" onclick="window.print()">Print Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 [CLINIC_NAME]. બધા અધિકારો આરક્ષિત / All rights reserved. | 
+                    <a href="#privacy">Privacy Policy</a> | 
+                    <a href="#terms">Terms of Service</a>
+                </p>
+                <p style="font-size: var(--fs-sm); margin-top: var(--spacing-sm);">
+                    Medical License: [LICENSE_NUMBER] | 
+                    Registration: [REGISTRATION_NUMBER]
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
+    
+    <!-- Service-specific JavaScript -->
+    <script>
+        // Service filtering functionality
+        function filterServices(category) {
+            const services = document.querySelectorAll('.service-card');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-filter="${category}"]`).classList.add('active');
+            
+            // Filter services
+            services.forEach(service => {
+                if (category === 'all' || service.dataset.category === category) {
+                    service.style.display = 'block';
+                    service.classList.add('fade-in');
+                } else {
+                    service.style.display = 'none';
+                }
+            });
+        }
+        
+        // Toggle service details
+        function toggleServiceDetails(button) {
+            const serviceCard = button.closest('.service-card');
+            const details = serviceCard.querySelector('.service-details');
+            
+            if (details.style.display === 'none' || !details.style.display) {
+                details.style.display = 'block';
+                button.innerHTML = '<i class="fas fa-eye-slash" aria-hidden="true"></i> છુપાવો / Hide Details';
+            } else {
+                details.style.display = 'none';
+                button.innerHTML = '<i class="fas fa-info-circle" aria-hidden="true"></i> વધુ જાણો / Learn More';
+            }
+        }
+        
+        // Add event listeners for filter buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterServices(this.dataset.filter);
+                });
+            });
+            
+            // Initially hide service details
+            const serviceDetails = document.querySelectorAll('.service-details');
+            serviceDetails.forEach(detail => {
+                detail.style.display = 'none';
+            });
+        });
+    </script>
+    
+    <!-- Service Card Styles -->
+    <style>
+        .services-filter {
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn.active {
+            background-color: var(--primary-green);
+            color: var(--white);
+            border-color: var(--primary-green);
+        }
+        
+        .service-card {
+            transition: all var(--transition-normal);
+            position: relative;
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-green-light), var(--primary-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-lg);
+            font-size: var(--fs-2xl);
+            color: var(--white);
+        }
+        
+        .service-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .service-rating {
+            color: var(--warning);
+            margin-top: var(--spacing-sm);
+        }
+        
+        .service-rating span {
+            color: var(--medium-gray);
+            font-size: var(--fs-sm);
+            margin-left: var(--spacing-xs);
+        }
+        
+        .service-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+            padding: var(--spacing-sm);
+            background-color: var(--light-gray);
+            border-radius: var(--radius-md);
+        }
+        
+        .service-duration {
+            color: var(--medium-gray);
+            font-size: var(--fs-sm);
+        }
+        
+        .service-price {
+            font-weight: 600;
+            color: var(--primary-green);
+            font-size: var(--fs-lg);
+        }
+        
+        .service-includes h4 {
+            margin-bottom: var(--spacing-sm);
+            font-size: var(--fs-base);
+        }
+        
+        .service-includes ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-includes li {
+            margin-bottom: var(--spacing-xs);
+            font-size: var(--fs-sm);
+        }
+        
+        .service-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .service-actions .btn {
+            flex: 1;
+            text-align: center;
+        }
+        
+        /* Package Styles */
+        .package-card {
+            position: relative;
+            text-align: center;
+        }
+        
+        .package-badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-md);
+            font-size: var(--fs-sm);
+            font-weight: 600;
+        }
+        
+        .package-price {
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: var(--medium-gray);
+            margin-right: var(--spacing-sm);
+        }
+        
+        .discounted-price {
+            font-size: var(--fs-2xl);
+            font-weight: 700;
+            color: var(--primary-green);
+        }
+        
+        .discount-badge {
+            background-color: var(--error);
+            color: var(--white);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: var(--fs-xs);
+            margin-left: var(--spacing-sm);
+        }
+        
+        .package-content ul {
+            list-style: none;
+            padding: 0;
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .package-content li {
+            margin-bottom: var(--spacing-sm);
+            text-align: left;
+        }
+        
+        @media (max-width: 768px) {
+            .service-actions {
+                flex-direction: column;
+            }
+            
+            .filter-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .service-info {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+                text-align: center;
+            }
+        }
+    </style>
+    
+    <!-- Fallback content for users with JavaScript disabled -->
+    <noscript>
+        <div style="background-color: var(--warning); color: var(--black); padding: var(--spacing-md); text-align: center;">
+            <p>
+                <strong>JavaScript is disabled in your browser.</strong><br>
+                Some features like service filtering may not work properly. Please enable JavaScript for the best experience.<br>
+                <strong>JavaScript તમારા બ્રાઉઝરમાં બંધ છે.</strong><br>
+                કેટલાક ફીચર્સ જેવા કે સેવા ફિલ્ટરિંગ યોગ્ય રીતે કામ ન કરી શકે. શ્રેષ્ઠ અનુભવ માટે કૃપા કરીને JavaScript સક્ષમ કરો.
+            </p>
+        </div>
+    </noscript>
+</body>
+</html>

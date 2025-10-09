@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery, patient resources, FAQ and health information at [CLINIC_NAME]. Download forms, view clinic photos, and get answers to common questions.">
+    <meta name="keywords" content="medical gallery, patient forms, FAQ, health resources, [CLINIC_NAME], medical information, [CITY]">
+    <meta name="author" content="[CLINIC_NAME]">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Gallery & Resources - [CLINIC_NAME]">
+    <meta property="og:description" content="View our gallery, download patient forms, and find answers to frequently asked questions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://[CLINIC_NAME].com/gallery.html">
+    <meta property="og:image" content="assets/images/clinic-gallery.jpg">
+    <link rel="canonical" href="https://[CLINIC_NAME].com/gallery.html">
+    
+    <title>Gallery & Resources - [CLINIC_NAME] | Patient Information</title>
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="[CLINIC_NAME] Home">
+                <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                [CLINIC_NAME]
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">હોમ / Home</a></li>
+                <li><a href="about.html" class="nav-link">વિશે / About</a></li>
+                <li><a href="services.html" class="nav-link">સેવાઓ / Services</a></li>
+                <li><a href="team.html" class="nav-link">ટીમ / Team</a></li>
+                <li><a href="gallery.html" class="nav-link active" aria-current="page">ગેલેરી / Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">સંપર્ક / Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="hero" style="padding: calc(80px + var(--spacing-2xl)) 0 var(--spacing-2xl);">
+            <div class="container">
+                <div class="hero-content fade-in">
+                    <h1>
+                        ગેલેરી અને સંસાધનો<br>
+                        <span style="font-size: 0.8em; opacity: 0.9;">Gallery & Resources</span>
+                    </h1>
+                    <p>
+                        અમારા ક્લિનિકની છબીઓ, દર્દીઓ માટેના ફોર્મ અને ઉપયોગી માહિતી<br>
+                        Clinic photos, patient forms and useful information
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Navigation -->
+        <section class="section" style="background-color: var(--light-gray); padding: var(--spacing-xl) 0;">
+            <div class="container">
+                <div class="gallery-nav text-center">
+                    <h2 class="sr-only">Gallery Categories</h2>
+                    <div class="gallery-filter-buttons">
+                        <button class="btn btn-secondary gallery-filter-btn active" data-filter="all">
+                            બધી છબીઓ / All Photos
+                        </button>
+                        <button class="btn btn-secondary gallery-filter-btn" data-filter="exterior">
+                            બાહ્ય ભાગ / Exterior
+                        </button>
+                        <button class="btn btn-secondary gallery-filter-btn" data-filter="interior">
+                            આંતરિક ભાગ / Interior
+                        </button>
+                        <button class="btn btn-secondary gallery-filter-btn" data-filter="equipment">
+                            સાધનો / Equipment
+                        </button>
+                        <button class="btn btn-secondary gallery-filter-btn" data-filter="events">
+                            ઇવેન્ટ્સ / Events
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="section" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="gallery-title" class="section-title">
+                        ફોટો ગેલેરી / Photo Gallery
+                    </h2>
+                    <p class="section-subtitle">
+                        અમારા ક્લિનિકની સુવિધાઓ અને વાતાવરણની ઝલક<br>
+                        A glimpse of our clinic facilities and environment
+                    </p>
+                </div>
+                
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Exterior Photos -->
+                    <div class="gallery-item fade-in" data-category="exterior" tabindex="0" role="button" aria-label="Clinic exterior building view">
+                        <img src="assets/images/clinic-exterior-1.jpg" 
+                             alt="Modern clinic building exterior with clear signage and parking area"
+                             loading="lazy"
+                             data-src="assets/images/clinic-exterior-1-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>ક્લિનિક બાહ્ય ભાગ / Clinic Exterior</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="exterior" tabindex="0" role="button" aria-label="Clinic entrance and reception area">
+                        <img src="assets/images/clinic-entrance.jpg" 
+                             alt="Welcoming clinic entrance with modern glass doors and accessibility ramp"
+                             loading="lazy"
+                             data-src="assets/images/clinic-entrance-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>પ્રવેશદ્વાર / Entrance</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="exterior" tabindex="0" role="button" aria-label="Parking area and landscaping">
+                        <img src="assets/images/parking-area.jpg" 
+                             alt="Spacious parking area with landscaped gardens and clear markings"
+                             loading="lazy"
+                             data-src="assets/images/parking-area-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>પાર્કિંગ એરિયા / Parking Area</span>
+                        </div>
+                    </div>
+
+                    <!-- Interior Photos -->
+                    <div class="gallery-item fade-in" data-category="interior" tabindex="0" role="button" aria-label="Reception and waiting area">
+                        <img src="assets/images/reception-waiting.jpg" 
+                             alt="Comfortable reception area with modern seating and natural lighting"
+                             loading="lazy"
+                             data-src="assets/images/reception-waiting-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>રિસેપ્શન એરિયા / Reception Area</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="interior" tabindex="0" role="button" aria-label="Doctor consultation room">
+                        <img src="assets/images/consultation-room-1.jpg" 
+                             alt="Well-equipped doctor consultation room with examination table and medical equipment"
+                             loading="lazy"
+                             data-src="assets/images/consultation-room-1-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>કન્સલ્ટેશન રૂમ / Consultation Room</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="interior" tabindex="0" role="button" aria-label="Laboratory testing area">
+                        <img src="assets/images/lab-interior.jpg" 
+                             alt="Modern laboratory with testing equipment and sterile environment"
+                             loading="lazy"
+                             data-src="assets/images/lab-interior-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>લેબોરેટરી / Laboratory</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="interior" tabindex="0" role="button" aria-label="Pharmacy and medicine storage">
+                        <img src="assets/images/pharmacy-interior.jpg" 
+                             alt="Well-organized pharmacy with medicine shelves and consultation counter"
+                             loading="lazy"
+                             data-src="assets/images/pharmacy-interior-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>ફાર્મસી / Pharmacy</span>
+                        </div>
+                    </div>
+
+                    <!-- Equipment Photos -->
+                    <div class="gallery-item fade-in" data-category="equipment" tabindex="0" role="button" aria-label="ECG machine and cardiac monitoring">
+                        <img src="assets/images/ecg-machine.jpg" 
+                             alt="Modern ECG machine for cardiac monitoring and heart health assessment"
+                             loading="lazy"
+                             data-src="assets/images/ecg-machine-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>ECG મશીન / ECG Machine</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="equipment" tabindex="0" role="button" aria-label="Laboratory testing equipment">
+                        <img src="assets/images/lab-equipment.jpg" 
+                             alt="Advanced laboratory testing equipment for accurate diagnostics"
+                             loading="lazy"
+                             data-src="assets/images/lab-equipment-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>લેબ સાધનો / Lab Equipment</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="equipment" tabindex="0" role="button" aria-label="Blood pressure monitoring devices">
+                        <img src="assets/images/bp-monitors.jpg" 
+                             alt="Digital blood pressure monitors for accurate BP measurement"
+                             loading="lazy"
+                             data-src="assets/images/bp-monitors-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>BP મોનિટર / BP Monitors</span>
+                        </div>
+                    </div>
+
+                    <!-- Events Photos -->
+                    <div class="gallery-item fade-in" data-category="events" tabindex="0" role="button" aria-label="Health awareness camp">
+                        <img src="assets/images/health-camp.jpg" 
+                             alt="Community health awareness camp with free medical checkups"
+                             loading="lazy"
+                             data-src="assets/images/health-camp-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>હેલ્થ કેમ્પ / Health Camp</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="events" tabindex="0" role="button" aria-label="Medical seminar and education">
+                        <img src="assets/images/medical-seminar.jpg" 
+                             alt="Educational medical seminar for community health awareness"
+                             loading="lazy"
+                             data-src="assets/images/medical-seminar-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>તબીબી સેમિનાર / Medical Seminar</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item fade-in" data-category="events" tabindex="0" role="button" aria-label="Vaccination drive">
+                        <img src="assets/images/vaccination-drive.jpg" 
+                             alt="Community vaccination drive ensuring public health safety"
+                             loading="lazy"
+                             data-src="assets/images/vaccination-drive-full.jpg">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" aria-hidden="true"></i>
+                            <span>રસીકરણ અભિયાન / Vaccination Drive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patient Resources Section -->
+        <section class="section" style="background-color: var(--light-gray);" aria-labelledby="resources-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="resources-title" class="section-title">
+                        દર્દીઓ માટેના સંસાધનો / Patient Resources
+                    </h2>
+                    <p class="section-subtitle">
+                        ડાઉનલોડ કરી શકાય તેવા ફોર્મ અને ઉપયોગી માહિતી<br>
+                        Downloadable forms and useful information
+                    </p>
+                </div>
+                
+                <div class="resources-grid grid grid-3">
+                    <!-- Patient Forms -->
+                    <div class="resource-category card fade-in">
+                        <div class="resource-header">
+                            <i class="fas fa-file-medical text-primary" aria-hidden="true"></i>
+                            <h3>દર્દી ફોર્મ / Patient Forms</h3>
+                        </div>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>નવા દર્દી નોંધણી ફોર્મ / New Patient Registration Form</h4>
+                                    <p>પ્રથમ મુલાકાત માટે આવશ્યક માહિતી ફોર્મ</p>
+                                </div>
+                                <a href="assets/docs/new-patient-form.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>તબીબી ઇતિહાસ ફોર્મ / Medical History Form</h4>
+                                    <p>તમારા તબીબી ઇતિહાસની વિગતવાર માહિતી</p>
+                                </div>
+                                <a href="assets/docs/medical-history-form.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>વીમા દાવા ફોર્મ / Insurance Claim Form</h4>
+                                    <p>વીમા દાવા માટે જરૂરી દસ્તાવેજ</p>
+                                </div>
+                                <a href="assets/docs/insurance-claim-form.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>સંમતિ ફોર્મ / Consent Form</h4>
+                                    <p>તબીબી સારવાર માટે સંમતિ ફોર્મ</p>
+                                </div>
+                                <a href="assets/docs/consent-form.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Health Information -->
+                    <div class="resource-category card fade-in">
+                        <div class="resource-header">
+                            <i class="fas fa-heart text-primary" aria-hidden="true"></i>
+                            <h3>સ્વાસ્થ્ય માહિતી / Health Information</h3>
+                        </div>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>ડાયાબિટીસ સંભાળ ગાઇડ / Diabetes Care Guide</h4>
+                                    <p>મધુમેહની સંભાળ અને નિયંત્રણ માટે માર્ગદર્શિકા</p>
+                                </div>
+                                <a href="assets/docs/diabetes-care-guide.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>હૃદય સ્વાસ્થ્ય ટિપ્સ / Heart Health Tips</h4>
+                                    <p>હૃદયને સ્વસ્થ રાખવા માટેની સલાહ</p>
+                                </div>
+                                <a href="assets/docs/heart-health-tips.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>આહાર અને પોષણ / Diet & Nutrition</h4>
+                                    <p>સંતુલિત આહાર અને પોષણ માર્ગદર્શિકા</p>
+                                </div>
+                                <a href="assets/docs/diet-nutrition-guide.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>કસરત અને યોગ / Exercise & Yoga</h4>
+                                    <p>દૈનિક કસરત અને યોગની માર્ગદર્શિકા</p>
+                                </div>
+                                <a href="assets/docs/exercise-yoga-guide.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Information -->
+                    <div class="resource-category card fade-in">
+                        <div class="resource-header">
+                            <i class="fas fa-ambulance text-primary" aria-hidden="true"></i>
+                            <h3>કટોકટી માહિતી / Emergency Information</h3>
+                        </div>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>પ્રાથમિક સારવાર ગાઇડ / First Aid Guide</h4>
+                                    <p>કટોકટીમાં પ્રાથમિક સારવારની માહિતી</p>
+                                </div>
+                                <a href="assets/docs/first-aid-guide.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>કટોકટી સંપર્ક નંબર / Emergency Contact Numbers</h4>
+                                    <p>મહત્વપૂર્ણ કટોકટી સંપર્ક નંબરોની યાદી</p>
+                                </div>
+                                <a href="assets/docs/emergency-contacts.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>હાર્ટ એટેક ચેતવણી / Heart Attack Warning Signs</h4>
+                                    <p>હાર્ટ એટેકના લક્ષણો અને તાત્કાલિક પગલાં</p>
+                                </div>
+                                <a href="assets/docs/heart-attack-warning.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                            
+                            <div class="resource-item">
+                                <div class="resource-info">
+                                    <h4>દવાની યાદી ટેમ્પલેટ / Medication List Template</h4>
+                                    <p>તમારી દવાઓની યાદી બનાવવા માટેનું ટેમ્પલેટ</p>
+                                </div>
+                                <a href="assets/docs/medication-list-template.pdf" class="btn btn-sm btn-primary" download>
+                                    <i class="fas fa-download" aria-hidden="true"></i>
+                                    PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="faq-title" class="section-title">
+                        વારંવાર પૂછાતા પ્રશ્નો / Frequently Asked Questions
+                    </h2>
+                    <p class="section-subtitle">
+                        સામાન્ય પ્રશ્નોના જવાબો અને ઉપયોગી માહિતી<br>
+                        Answers to common questions and useful information
+                    </p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-categories">
+                        <button class="faq-category-btn active" data-category="general">
+                            સામાન્ય / General
+                        </button>
+                        <button class="faq-category-btn" data-category="appointments">
+                            એપોઇન્ટમેન્ટ / Appointments
+                        </button>
+                        <button class="faq-category-btn" data-category="services">
+                            સેવાઓ / Services
+                        </button>
+                        <button class="faq-category-btn" data-category="billing">
+                            બિલિંગ / Billing
+                        </button>
+                    </div>
+                    
+                    <div class="faq-content">
+                        <!-- General FAQ -->
+                        <div class="faq-category-content active" data-category="general">
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>ક્લિનિકના કામના કલાકો શું છે? / What are the clinic operating hours?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        અમારા ક્લિનિકના કામના કલાકો સોમવારથી શનિવાર સવારે 9:00 થી સાંજે 6:00 સુધી છે. 
+                                        રવિવારે અમે બંધ રહીએ છીએ. કટોકટીના કિસ્સામાં, અમે 24/7 ઉપલબ્ધ છીએ.
+                                    </p>
+                                    <p>
+                                        Our clinic operates Monday to Saturday from 9:00 AM to 6:00 PM. 
+                                        We are closed on Sundays. For emergencies, we are available 24/7.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>પ્રથમ મુલાકાત માટે કયા દસ્તાવેજો લાવવા જોઈએ? / What documents should I bring for the first visit?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        કૃપા કરીને નીચેના દસ્તાવેજો લાવો: માન્ય ID પ્રૂફ, વીમા કાર્ડ (જો હોય તો), 
+                                        અગાઉના તબીબી રેકોર્ડ્સ, વર્તમાન દવાઓની યાદી, અને રેફરલ લેટર (જો કોઈ હોય તો).
+                                    </p>
+                                    <p>
+                                        Please bring the following documents: Valid ID proof, insurance card (if any), 
+                                        previous medical records, current medication list, and referral letter (if any).
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>પાર્કિંગની સુવિધા છે? / Is parking available?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        હા, અમારી પાસે દર્દીઓ અને તેમના પરિવારજનો માટે મફત પાર્કિંગની સુવિધા છે. 
+                                        પાર્કિંગ એરિયા સુરક્ષિત અને સારી રીતે પ્રકાશિત છે.
+                                    </p>
+                                    <p>
+                                        Yes, we have free parking facilities for patients and their families. 
+                                        The parking area is secure and well-lit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Appointments FAQ -->
+                        <div class="faq-category-content" data-category="appointments">
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>એપોઇન્ટમેન્ટ કેવી રીતે બુક કરવું? / How to book an appointment?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        તમે ફોન, ઓનલાઇન અથવા વ્યક્તિગત રીતે એપોઇન્ટમેન્ટ બુક કરી શકો છો. 
+                                        ઓનલાઇન બુકિંગ માટે અમારી વેબસાઇટનો ઉપયોગ કરો અથવા [PHONE] પર કૉલ કરો.
+                                    </p>
+                                    <p>
+                                        You can book appointments by phone, online, or in person. 
+                                        Use our website for online booking or call [PHONE].
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>એપોઇન્ટમેન્ટ કેન્સલ કરવાની નીતિ શું છે? / What is the appointment cancellation policy?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        કૃપા કરીને એપોઇન્ટમેન્ટના ઓછામાં ઓછા 24 કલાક પહેલાં કેન્સલ કરો. 
+                                        આ અન્ય દર્દીઓને તે સમય મળવામાં મદદ કરે છે.
+                                    </p>
+                                    <p>
+                                        Please cancel appointments at least 24 hours in advance. 
+                                        This helps other patients get that time slot.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>કટોકટીની એપોઇન્ટમેન્ટ મળી શકે? / Can I get emergency appointments?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        હા, કટોકટીના કિસ્સામાં અમે તાત્કાલિક એપોઇન્ટમેન્ટ આપવાનો પ્રયાસ કરીએ છીએ. 
+                                        કૃપા કરીને [PHONE] પર કૉલ કરો અને કટોકટીની પ્રકૃતિ સમજાવો.
+                                    </p>
+                                    <p>
+                                        Yes, we try to accommodate emergency appointments. 
+                                        Please call [PHONE] and explain the nature of the emergency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Services FAQ -->
+                        <div class="faq-category-content" data-category="services">
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>કયા લેબ ટેસ્ટ ઉપલબ્ધ છે? / What lab tests are available?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        અમે બ્લડ ટેસ્ટ, યુરિન ટેસ્ટ, ECG, બ્લડ સુગર, કોલેસ્ટ્રોલ, લિવર ફંક્શન, 
+                                        કિડની ફંક્શન અને અન્ય સામાન્ય ટેસ્ટ કરીએ છીએ.
+                                    </p>
+                                    <p>
+                                        We offer blood tests, urine tests, ECG, blood sugar, cholesterol, 
+                                        liver function, kidney function and other common tests.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>ટેલિમેડિસિન સેવા ઉપલબ્ધ છે? / Is telemedicine service available?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        હા, અમે વિડિયો કન્સલ્ટેશન અને ટેલિમેડિસિન સેવાઓ પ્રદાન કરીએ છીએ. 
+                                        આ ખાસ કરીને ફોલો-અપ વિઝિટ અને દવાની સમીક્ષા માટે ઉપયોગી છે.
+                                    </p>
+                                    <p>
+                                        Yes, we provide video consultation and telemedicine services. 
+                                        This is especially useful for follow-up visits and medication reviews.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Billing FAQ -->
+                        <div class="faq-category-content" data-category="billing">
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>કયા પેમેન્ટ મેથડ સ્વીકારવામાં આવે છે? / What payment methods are accepted?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        અમે કેશ, ક્રેડિટ/ડેબિટ કાર્ડ, UPI, નેટ બેંકિંગ અને મોબાઇલ પેમેન્ટ સ્વીકારીએ છીએ. 
+                                        EMI ની સુવિધા પણ ઉપલબ્ધ છે.
+                                    </p>
+                                    <p>
+                                        We accept cash, credit/debit cards, UPI, net banking, and mobile payments. 
+                                        EMI facility is also available.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item fade-in">
+                                <button class="faq-question" aria-expanded="false">
+                                    <span>વીમા કવરેજ સ્વીકારવામાં આવે છે? / Is insurance coverage accepted?</span>
+                                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        હા, અમે મોટા ભાગની વીમા કંપનીઓ સાથે કામ કરીએ છીએ. કૃપા કરીને તમારો વીમા કાર્ડ લાવો 
+                                        અને અમારી સાથે કવરેજ વિશે ચર્ચા કરો.
+                                    </p>
+                                    <p>
+                                        Yes, we work with most insurance companies. Please bring your insurance card 
+                                        and discuss coverage with us.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Blog/News Section -->
+        <section class="section" style="background-color: var(--light-gray);" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="blog-title" class="section-title">
+                        સ્વાસ્થ્ય સમાચાર અને ટિપ્સ / Health News & Tips
+                    </h2>
+                    <p class="section-subtitle">
+                        તાજા સ્વાસ્થ્ય સમાચાર અને ઉપયોગી સ્વાસ્થ્ય ટિપ્સ<br>
+                        Latest health news and useful health tips
+                    </p>
+                </div>
+                
+                <div class="blog-grid grid grid-3">
+                    <article class="blog-post card fade-in">
+                        <div class="blog-image">
+                            <img src="assets/images/diabetes-management.jpg" 
+                                 alt="Diabetes management tips and healthy lifestyle"
+                                 loading="lazy">
+                            <div class="blog-category">સ્વાસ્થ્ય ટિપ્સ</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>મધુમેહ નિયંત્રણ માટે 10 અસરકારક ટિપ્સ</h3>
+                            <p class="blog-excerpt">
+                                મધુમેહને કાબૂમાં રાખવા માટે આહાર, કસરત અને જીવનશૈલીમાં ફેરફારની 
+                                મહત્વપૂર્ણ ટિપ્સ જાણો...
+                            </p>
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar" aria-hidden="true"></i>
+                                    15 ડિસેમ્બર, 2024
+                                </span>
+                                <span class="blog-author">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    ડૉ. [DR_NAME]
+                                </span>
+                            </div>
+                            <a href="#" class="blog-read-more">વધુ વાંચો / Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post card fade-in">
+                        <div class="blog-image">
+                            <img src="assets/images/heart-health.jpg" 
+                                 alt="Heart health and cardiovascular wellness"
+                                 loading="lazy">
+                            <div class="blog-category">હૃદય સ્વાસ્થ્ય</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>હૃદયને સ્વસ્થ રાખવાના સરળ ઉપાયો</h3>
+                            <p class="blog-excerpt">
+                                હૃદયરોગથી બચવા અને હૃદયને સ્વસ્થ રાખવા માટે દૈનિક જીવનમાં 
+                                અપનાવી શકાય તેવા સરળ ઉપાયો...
+                            </p>
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar" aria-hidden="true"></i>
+                                    10 ડિસેમ્બર, 2024
+                                </span>
+                                <span class="blog-author">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    ડૉ. [DR_NAME]
+                                </span>
+                            </div>
+                            <a href="#" class="blog-read-more">વધુ વાંચો / Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post card fade-in">
+                        <div class="blog-image">
+                            <img src="assets/images/winter-health.jpg" 
+                                 alt="Winter health tips and seasonal wellness"
+                                 loading="lazy">
+                            <div class="blog-category">મોસમી સ્વાસ્થ્ય</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>શિયાળામાં સ્વસ્થ રહેવાની ટિપ્સ</h3>
+                            <p class="blog-excerpt">
+                                શિયાળાની ઋતુમાં સામાન્ય બિમારીઓથી બચવા અને સ્વસ્થ રહેવા માટે 
+                                ખાસ સાવચેતીઓ અને ઉપાયો...
+                            </p>
+                            <div class="blog-meta">
+                                <span class="blog-date">
+                                    <i class="fas fa-calendar" aria-hidden="true"></i>
+                                    5 ડિસેમ્બર, 2024
+                                </span>
+                                <span class="blog-author">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    ડૉ. [DR_NAME]
+                                </span>
+                            </div>
+                            <a href="#" class="blog-read-more">વધુ વાંચો / Read More</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-newspaper" aria-hidden="true"></i>
+                        બધા આર્ટિકલ જુઓ / View All Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-green-light) 0%, var(--primary-green) 100%); color: var(--white);">
+            <div class="container text-center">
+                <h2 style="color: var(--white); margin-bottom: var(--spacing-lg);">
+                    તમારા પ્રશ્નોના જવાબ ન મળ્યા? / Didn't Find Answers to Your Questions?
+                </h2>
+                <p style="font-size: var(--fs-lg); margin-bottom: var(--spacing-xl); opacity: 0.9;">
+                    અમારી સાથે સંપર્ક કરો અને તમારા તમામ પ્રશ્નોના જવાબ મેળવો<br>
+                    Contact us and get answers to all your questions
+                </p>
+                <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn" style="background-color: var(--white); color: var(--primary-green); font-weight: bold;">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        સંપર્ક કરો / Contact Us
+                    </a>
+                    <a href="tel:[PHONE]" class="btn btn-secondary" style="border-color: var(--white); color: var(--white);">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        કૉલ કરો / Call: [PHONE]
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="grid grid-4">
+                <div>
+                    <h3>
+                        <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                        [CLINIC_NAME]
+                    </h3>
+                    <p>
+                        તમારા સ્વાસ્થ્યની સંભાળ અમારી જવાબદારી છે<br>
+                        Taking care of your health is our responsibility
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>સંપર્ક / Contact</h3>
+                    <address style="font-style: normal;">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> [ADDRESS], [CITY], [STATE] [ZIP]</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:[PHONE]">[PHONE]</a></p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:[EMAIL]">[EMAIL]</a></p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3>કલાક / Hours</h3>
+                    <p>[HOURS]</p>
+                    <p><strong>કટોકટી / Emergency:</strong><br>24/7 Available</p>
+                </div>
+                
+                <div>
+                    <h3>ઝડપી લિંક્સ / Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="index.html">હોમ / Home</a></li>
+                        <li><a href="about.html">વિશે / About</a></li>
+                        <li><a href="services.html">સેવાઓ / Services</a></li>
+                        <li><a href="contact.html">એપોઇન્ટમેન્ટ / Appointment</a></li>
+                        <li><a href="#" onclick="window.print()">Print Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 [CLINIC_NAME]. બધા અધિકારો આરક્ષિત / All rights reserved. | 
+                    <a href="#privacy">Privacy Policy</a> | 
+                    <a href="#terms">Terms of Service</a>
+                </p>
+                <p style="font-size: var(--fs-sm); margin-top: var(--spacing-sm);">
+                    Medical License: [LICENSE_NUMBER] | 
+                    Registration: [REGISTRATION_NUMBER]
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/app.js"></script>
+    
+    <!-- Gallery Page Specific Styles and Scripts -->
+    <style>
+        .gallery-filter-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .gallery-filter-btn.active {
+            background-color: var(--primary-green);
+            color: var(--white);
+            border-color: var(--primary-green);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--primary-green-light), var(--primary-green));
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity var(--transition-normal);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 0.9;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay i {
+            font-size: var(--fs-2xl);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .resource-category {
+            height: 100%;
+        }
+        
+        .resource-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .resource-header i {
+            font-size: var(--fs-3xl);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-md);
+            transition: all var(--transition-fast);
+        }
+        
+        .resource-item:hover {
+            box-shadow: var(--shadow-sm);
+            border-color: var(--primary-green);
+        }
+        
+        .resource-info {
+            flex: 1;
+        }
+        
+        .resource-info h4 {
+            margin-bottom: var(--spacing-xs);
+            font-size: var(--fs-base);
+        }
+        
+        .resource-info p {
+            margin: 0;
+            font-size: var(--fs-sm);
+            color: var(--medium-gray);
+        }
+        
+        .faq-categories {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .faq-category-btn {
+            background: none;
+            border: 2px solid var(--primary-green);
+            color: var(--primary-green);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-weight: 500;
+        }
+        
+        .faq-category-btn.active,
+        .faq-category-btn:hover {
+            background-color: var(--primary-green);
+            color: var(--white);
+        }
+        
+        .faq-category-content {
+            display: none;
+        }
+        
+        .faq-category-content.active {
+            display: block;
+        }
+        
+        .faq-item {
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-md);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: var(--spacing-lg);
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background-color var(--transition-fast);
+        }
+        
+        .faq-question:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .faq-question i {
+            transition: transform var(--transition-fast);
+        }
+        
+        .faq-question[aria-expanded="true"] i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 var(--spacing-lg);
+            max-height: 0;
+            overflow: hidden;
+            transition: all var(--transition-normal);
+        }
+        
+        .faq-answer.open {
+            padding: var(--spacing-lg);
+            max-height: 500px;
+        }
+        
+        .blog-post {
+            overflow: hidden;
+        }
+        
+        .blog-image {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .blog-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        
+        .blog-post:hover .blog-image img {
+            transform: scale(1.05);
+        }
+        
+        .blog-category {
+            position: absolute;
+            top: var(--spacing-md);
+            left: var(--spacing-md);
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: var(--fs-xs);
+            font-weight: 600;
+        }
+        
+        .blog-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .blog-excerpt {
+            color: var(--medium-gray);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .blog-meta {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            font-size: var(--fs-sm);
+            color: var(--medium-gray);
+        }
+        
+        .blog-read-more {
+            color: var(--primary-green);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .blog-read-more:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .faq-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .resource-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .blog-meta {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+        }
+    </style>
+    
+    <script>
+        // Gallery filtering functionality
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-filter="${category}"]`).classList.add('active');
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        // FAQ functionality
+        function toggleFAQ(question) {
+            const answer = question.nextElementSibling;
+            const isOpen = question.getAttribute('aria-expanded') === 'true';
+            
+            // Close all other FAQs in the same category
+            const categoryContent = question.closest('.faq-category-content');
+            const allQuestions = categoryContent.querySelectorAll('.faq-question');
+            const allAnswers = categoryContent.querySelectorAll('.faq-answer');
+            
+            allQuestions.forEach(q => q.setAttribute('aria-expanded', 'false'));
+            allAnswers.forEach(a => a.classList.remove('open'));
+            
+            // Toggle current FAQ
+            if (!isOpen) {
+                question.setAttribute('aria-expanded', 'true');
+                answer.classList.add('open');
+            }
+        }
+        
+        // FAQ category switching
+        function switchFAQCategory(category) {
+            const buttons = document.querySelectorAll('.faq-category-btn');
+            const contents = document.querySelectorAll('.faq-category-content');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-category="${category}"]`).classList.add('active');
+            
+            // Show/hide content
+            contents.forEach(content => {
+                content.classList.remove('active');
+                if (content.dataset.category === category) {
+                    content.classList.add('active');
+                }
+            });
+        }
+        
+        // Initialize event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery filter buttons
+            const galleryFilterButtons = document.querySelectorAll('.gallery-filter-btn');
+            galleryFilterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterGallery(this.dataset.filter);
+                });
+            });
+            
+            // FAQ questions
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    toggleFAQ(this);
+                });
+            });
+            
+            // FAQ category buttons
+            const faqCategoryButtons = document.querySelectorAll('.faq-category-btn');
+            faqCategoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    switchFAQCategory(this.dataset.category);
+                });
+            });
+        });
+    </script>
+    
+    <!-- Fallback content for users with JavaScript disabled -->
+    <noscript>
+        <div style="background-color: var(--warning); color: var(--black); padding: var(--spacing-md); text-align: center;">
+            <p>
+                <strong>JavaScript is disabled in your browser.</strong><br>
+                Some features like gallery filtering and FAQ interactions may not work properly. Please enable JavaScript for the best experience.<br>
+                <strong>JavaScript તમારા બ્રાઉઝરમાં બંધ છે.</strong><br>
+                કેટલાક ફીચર્સ જેવા કે ગેલેરી ફિલ્ટરિંગ અને FAQ યોગ્ય રીતે કામ ન કરી શકે. શ્રેષ્ઠ અનુભવ માટે કૃપા કરીને JavaScript સક્ષમ કરો.
+            </p>
+        </div>
+    </noscript>
+</body>
+</html>
